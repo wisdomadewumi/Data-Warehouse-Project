@@ -42,4 +42,4 @@ This project is licensed under the MIT License. You are free to use, modify and 
 
 ## 👨🏽 About Me
 
-Hello friendly stranger! I go by the name **Divine-Wisdom O. Adewumi** and I'm a Biomedical Laboratory Scientist turned Data Analyst due to my penchant for seeking and finding patterns in data all around us. Insights from data in healthcare, business, education, music and geopolitics tend to pique my interest the most.
+Hello friendly stranger! I go by the name **Divine-Wisdom O. Adewumi** and I'm a Biomedical Laboratory Scientist turned Data Analyst on account of my penchant for seeking and finding patterns in data all around us. Insights from data in healthcare, business, education, music and geopolitics tend to pique my interest the most.
