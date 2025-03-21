@@ -1,9 +1,10 @@
-﻿/*
+/*
 ===========================================================================
 Create Database and Schemas
 ===========================================================================
 Script Purpose:
-	This SQL Server script is used to drop and recreate the DataWarehouse database. It ensures that an existing database with the same name is first removed, then a fresh version is created. Additionally, it sets up three schemas:
+	This SQL Server script is used to drop and recreate the DataWarehouse database. It ensures that an existing database with the same name is first removed, then a fresh version is created.
+	Additionally, it sets up three schemas:
 	- bronze (raw data)
 	- silver (cleaned and transformed data)
 	- gold (aggregated and business-ready data)
@@ -19,14 +20,14 @@ GO
 IF EXISTS (SELECT 1 FROM sys.databases WHERE name = 'DataWarehouse')
 BEGIN
 	DECLARE @confirm CHAR(1);
-    PRINT 'WARNING: This will permanently delete the DataWarehouse database and all its data!';
-    PRINT 'Enter Y to proceed or any other key to cancel:';
-    
-    -- Read user input
-    SET @confirm = 'N'; -- Default value to prevent accidental deletion
-
+	PRINT 'WARNING: This will permanently delete the DataWarehouse database and all its data!';
+	PRINT 'Enter Y to proceed or any other key to cancel:';
+	
+	-- Read user input
+	SET @confirm = 'N'; -- Default value to prevent accidental deletion
+	
 	IF @confirm = 'Y'
-    BEGIN
+	BEGIN
 		ALTER DATABASE DataWarehouse SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
 		DROP DATABASE DataWarehouse;
 		PRINT 'Database DataWarehouse has been dropped.';
@@ -35,7 +36,7 @@ BEGIN
 	ELSE
 	BEGIN
 		PRINT 'Operation canceled. The database has NOT been dropped.';
-        RETURN;
+		RETURN;
 	END
 END
 GO
