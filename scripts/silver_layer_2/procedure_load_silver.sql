@@ -3,12 +3,13 @@
 Data Loading into Silver Layer
 ===========================================================================
 Script Purpose:
-	This stored procedure, silver.load_silver, is designed to +bulk load raw data into the bronze schema from external CSV files. It follows an Extract, Load, Transform (ELT) approach where raw data is ingested before further processing.
+	The silver.load_silver stored procedure is responsible for transforming and loading data from the Bronze Layer (raw data) into the Silver Layer (cleaned and structured data) in a data warehouse. It ensures that the data is properly formatted, deduplicated, and enriched for further analysis.
 
-Functions:
-	1. Truncates Existing Data: Ensures that the tables are emptied before new data is inserted to prevent duplication.
-	2. Bulk Inserts Data from CSV Files: Loads data efficiently into tables using BULK INSERT.
-	3. Tracks Load Duration: Measures the time taken for each table load and displays the total execution time for monitoring performance.
+Features:
+	1. Uses TRUNCATE TABLE before inserting new data to ensure a full refresh.
+	2. Cleans and standardizes data using TRIM, CASE, and string functions.
+	3. Uses window functions (ROW_NUMBER, LEAD) for deduplication and date transformations.
+	4. Implements error handling to log issues if the process fails.
 */
 
 
