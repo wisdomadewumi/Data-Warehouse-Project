@@ -1,7 +1,28 @@
-/*
+﻿/*
 =============================================
 	Data Quality Rechecks in Silver Table
 =============================================
+
+Script Purpose:
+	This script ensures data integrity, consistency, and standardization in the Silver tables, which serve as a refined data layer for analytics and reporting. The checks validate data transformations from the Bronze layer and detect inconsistencies before moving to the Gold layer.
+
+Objectives:
+	1. Primary Key Integrity & Uniqueness:
+	- Ensure no NULLs or duplicates in primary keys across all Silver tables.
+	2. String Formatting & Cleanup:
+	- Identify and remove unwanted spaces in categorical fields (e.g., names, marital status, gender).
+	3. Data Standardization & Consistency:
+	- Validate categorical values (e.g., marital status, gender, product lines, locations).
+	- Ensure uniform customer and product IDs for accurate table joins.
+	4. Numeric Data Validations:
+	- Detect negative, NULL, or zero values in cost, sales, quantity, and price columns.
+	- Verify business rules: sales = quantity * price.
+	5. Date Integrity & Chronology Checks:
+	- Identify out-of-range or invalid date formats.
+	- Ensure logical ordering of dates (e.g., order date ≤ ship date ≤ due date).
+	6. Relationship & Referential Integrity:
+	- Verify that sales transactions reference valid customer and product IDs.
+	- Ensure product categories align with reference tables.
 */
 
 

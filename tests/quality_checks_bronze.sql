@@ -1,7 +1,34 @@
-/*
+﻿/*
 =============================================
 	Data Quality Checks in Bronze Tables
 =============================================
+
+Script Purpose:
+	This script performs essential data quality checks on the Bronze layer tables to ensure data integrity, consistency, and readiness for further processing in the Silver and Gold layers. The checks help identify and address potential issues such as missing values, duplicates, formatting inconsistencies, invalid relationships, and incorrect data types.
+
+Objectives:
+	1. Primary Key Integrity: Ensure there are no NULL values or duplicates in primary key columns.
+	2. String Formatting & Cleanup: Identify and remove unwanted leading/trailing spaces in text fields.
+	3. Data Standardization & Consistency:
+	- Check for uniform values in categorical fields (e.g., gender, marital status, country).
+	- Ensure product and customer identifiers follow expected formats.
+	4. Data Integrity Checks:
+	- Validate product and customer keys against reference tables.
+	- Ensure relationships between tables (e.g., sales transactions referencing valid customers and products).
+	5. Numeric Data Validations:
+	- Identify negative or NULL values in price, sales, and quantity columns.
+	- Verify that sales values align with the formula: sales = quantity * price.
+	6. Date Integrity Checks:
+	- Identify and correct invalid date formats.
+	- Ensure date columns follow chronological order (e.g., order date ≤ ship date ≤ due date).
+	- Detect out-of-range or future dates.
+	7. Key Transformations:
+	- Extract and standardize product category IDs from prd_key.
+	- Normalize customer IDs by removing prefixes.
+	8. Business Rule Validation:
+	- Detect pricing and sales inconsistencies.
+	- Identify missing or incorrect category mappings.
+	- Ensure product lifecycle dates (start and end dates) follow expected sequences.
 */
 
 
