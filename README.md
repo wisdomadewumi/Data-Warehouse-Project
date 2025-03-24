@@ -14,15 +14,6 @@ This project involves:
 3. **Data Modeling**: Designing and optimizing fact and dimension tables for efficient analytical queries.
 4. **Analytics & Reporting**: Building SQL-based reports and dashboards to deliver actionable insights.
 
-
-🧩 Skills showcased:
-1. SQL Development – Strong skills in writing, optimizing, and troubleshooting SQL queries, including window functions, CTEs, subqueries, and performance tuning.
-2. Data Architecture – Implementing the Medallion Architecture (Bronze, Silver, Gold layers), designing data storage strategies, and structuring a scalable warehouse.
-3. Data Engineering – Building ETL pipelines, transforming raw data into structured formats, and integrating multiple data sources into a modern data warehouse.
-4. ETL Pipeline Development – Hands-on experience designing data ingestion, transformation, and loading processes, ensuring data quality and integrity.
-5. Data Modeling – Designing fact and dimension tables (star schema), optimizing data structures for analytics and reporting.
-6. Data Analytics & Reporting – Creating SQL-based reports, dashboards, and insights for business intelligence.
-
 ---
 ## ⚙️ Important Links & Tools:
 
@@ -98,6 +89,16 @@ data-warehouse-project/
 ├── README.md                           # Project overview and instructions
 ├── LICENSE                             # License information for the repository
 ```
+
+---
+## 🧩 Skills Showcased
+
+1. **SQL Development** – Strong skills in writing, optimizing, and troubleshooting SQL queries, including window functions, CTEs, subqueries, and performance tuning.
+2. **Data Architecture** – Implementing the Medallion Architecture (Bronze, Silver, Gold layers), designing data storage strategies, and structuring a scalable warehouse.
+3. **Data Engineering** – Building ETL pipelines, transforming raw data into structured formats, and integrating multiple data sources into a modern data warehouse.
+4. **ETL Pipeline Development** – Hands-on experience designing data ingestion, transformation, and loading processes, ensuring data quality and integrity.
+5. **Data Modeling** – Designing fact and dimension tables (star schema), optimizing data structures for analytics and reporting.
+6. **Data Analytics & Reporting** – Creating SQL-based reports, dashboards, and insights for business intelligence.
 
 ---
 ## 🪪 License
