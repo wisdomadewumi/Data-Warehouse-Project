@@ -2,7 +2,7 @@
 
 Welcome to the **Data Warehouse and Analytics Project** repository! ☄️
 
-This project demonstrates a comprehensive data warehousing and analytics solution, from building a data warehouse to generating actionable insights. Designed as a portfolio project, it highlights industry best practices in data engineering and analytics. This is based on a Course offered by Data with Baraa on YouTube; I completed the course and proceeded to complete the projects as arrows in my portfolio quiver.
+This project demonstrates a comprehensive data warehousing and analytics solution, from building a data warehouse to generating actionable insights. Designed as a portfolio project, it highlights industry best practices in data engineering and analytics.
 
 ---
 ## 📖 Project Overview
@@ -41,19 +41,6 @@ Develop a modern data warehouse using SQL Server to consolidate sales data, enab
 - **Scope**: Focus on the latest dataset only; historization is not required.
 - **Documentation**: Provide documentation of the data model to support both business stakeholders and analytics teams.
 
-----
-### 📊 BI: Analytics & Reporting (Data Analysis)
-
-#### 🥅 Objective
-Develop SQL-based analytics to deliver detailed insights into:
-
-- **Customer Behaviour**
-- **Product Performance**
-- **Sales Trends**
-
-These insights empower stakeholders with key business metrics, enabling strategic decision-making
-Building a modern Data Warehouse with SQL Server, including ETL processes, data modeling, and analytics.
-
 ---
 ## 🏯 Data Architecture
 
@@ -67,7 +54,7 @@ The data architecture for this project follows Medallion Architecture **Bronze**
 ---
 ## 🗃️ Repository Structure
 ```
-data-warehouse-project/
+Data-Warehouse-Project/
 │
 ├── datasets/                           # Raw datasets used for the project (ERP and CRM data)
 │
@@ -98,7 +85,6 @@ data-warehouse-project/
 3. **Data Engineering** – Building ETL pipelines, transforming raw data into structured formats, and integrating multiple data sources into a modern data warehouse.
 4. **ETL Pipeline Development** – Hands-on experience designing data ingestion, transformation, and loading processes, ensuring data quality and integrity.
 5. **Data Modeling** – Designing fact and dimension tables (star schema), optimizing data structures for analytics and reporting.
-6. **Data Analytics & Reporting** – Creating SQL-based reports, dashboards, and insights for business intelligence.
 
 ---
 ## 🪪 License
@@ -115,7 +101,7 @@ We can connect on LinkedIn or you could check my portfolio website:
 [![Website](https://img.shields.io/badge/Website-000000?style=for-the-badge&logo=google-chrome&logoColor=white)](https://wisdomadewumi.github.io)
 
 ----
-## 📝 Credit
+## 📝 Shout Out
 
 Thanks to **Data with Baraa**'s YouTube Channel, I was able to not only complete this but understand the excellent intricacies involved in building a data pipeline. He is one of the best (if not the best) teachers on YouTube as regards Data Engineering Data Science and Data Analytics.
 Kindly check him out here:
