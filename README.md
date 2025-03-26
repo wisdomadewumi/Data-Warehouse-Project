@@ -1,4 +1,4 @@
-# Data Warehouse and Analytics Project
+# Data Warehouse Project
 
 Welcome to the **Data Warehouse Project** repository! ☄️
 
